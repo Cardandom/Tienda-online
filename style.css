@@ -1,0 +1,11 @@
+/*Colores de la pagina*/
+:root {
+    --white: #FFFFFF;
+    --black: #303030;
+    --very-light-pink: #c7c7c7;
+    --text-input-field: #f7f7f7;
+    --hospital-green: #acd9b2;
+}
+body{
+    font-family: 'Quicksand', sans-serif;
+}
