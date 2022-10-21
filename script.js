@@ -52,11 +52,27 @@ productList.push ({
 })
 productList.push ({
     name: 'Road Bike',
-    price : 150,
+    price : 130,
     image: 'https://images.pexels.com/photos/38296/cycling-bicycle-riding-sport-38296.jpeg?auto=compress&cs=tinysrgb&w=600',
 })
+productList.push ({
+    name: 'Mountain Bike',
+    price : 140,
+    image: 'https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&w=600',
+})
+productList.push ({
+    name: 'Personalized Bike',
+    price : 150,
+    image: 'https://images.pexels.com/photos/255934/pexels-photo-255934.jpeg?auto=compress&cs=tinysrgb&w=600',
+})
+productList.push ({
+    name: 'Little Girls Bike',
+    price : 80,
+    image: 'https://images.pexels.com/photos/680108/pexels-photo-680108.jpeg?auto=compress&cs=tinysrgb&w=600',
+})
 
-for (product of productList) {
+function renderProducts (arr) {
+for (product of arr) {
     const productCard = document.createElement ('div');
     productCard.classList.add('product-card');
 
@@ -91,3 +107,5 @@ for (product of productList) {
 
     cardContainer.appendChild(productCard);
 }
+}
+renderProducts (productList);
